@@ -1,16 +1,17 @@
 public class Tamagotchi {
     public String name;
     public int age;
-    public String mood;
+    public int mood;
     public int energy;
     public int hunger;
 
 
-    public Tamagotchi(String name, int age, String mood, int energy) {
+    public Tamagotchi(String name, int age, int mood, int energy, int hunger) {
         this.name = name;
         this.age = age;
         this.mood = mood;
         this.energy = energy;
+        this.hunger = hunger;
     }
 
     public void play() {
@@ -18,7 +19,7 @@ public class Tamagotchi {
 
         boolean play = true;
         if (play) {
-            String addPlus10 = mood + 10;
+            int addPlus10 = mood + 10;
         }
     }
 
