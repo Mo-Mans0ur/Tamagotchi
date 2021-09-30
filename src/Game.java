@@ -28,7 +28,7 @@ public class Game {
         System.out.println("so what will you call your new buddy?");
         String nameOfDog = scanner.nextLine();
 
-        Dog tamagotchiDog = new Dog(nameOfDog, 2, 90, 90, 40);
+        Dog tamagotchiDog = new Dog(nameOfDog, 2, 90, 40, 40);
 
         System.out.println("cool so this is the info of your dog " + tamagotchiDog +"\nwhat would you like to do with your friend?");
         System.out.println();
@@ -36,25 +36,87 @@ public class Game {
         tamagotchiDog.givepaw();
         System.out.println();
 
-        System.out.println("1. you could feed him.\n2. play with him.\n3. let him sleep.");
+        System.out.println("1. feed.\n2. play. \n3. sleep.");
         int choice = scanner.nextInt();
 
         if (choice == 1) {
             tamagotchiDog.feed();
+            System.out.println("hey his stats has increased!");
         } else if (choice == 2) {
             tamagotchiDog.play();
+            System.out.println("hey his stats has increased!");
         } else {
             tamagotchiDog.sleep();
+            System.out.println("hey his stats has increased!");
+
         }
 
+        int choice2 = scanner.nextInt();
 
-        System.out.println("hey " + tamagotchiDog.name + "'s stats has increased take a look!");
+        if (choice2 == 1) {
+            tamagotchiDog.feed();
+            System.out.println("hey his stats has increased!");
+        } else if (choice == 2) {
+            tamagotchiDog.play();
+            System.out.println("hey his stats has increased!");
+        } else {
+            tamagotchiDog.sleep();
+            System.out.println("hey his stats has increased!");
 
-        System.out.println(tamagotchiDog);
-
+        }
     }
 
     public static void Cat() {
+        Scanner scanner = new Scanner(System.in);
+
         System.out.println("wow you chose a cat, well this feline cottontail likes you too.");
+        System.out.println("so what would you call your feline little friend");
+        String nameOfCat = scanner.nextLine();
+
+        Cat tamagotchiCat = new Cat(nameOfCat,5,90,40,40);
+
+        System.out.println("nice so heres your info of your cat " + tamagotchiCat + "\nwhat would you like to do with your friend?");
+        System.out.println();
+
+
+
+        System.out.println("1. feed.\n2. play.\n3. sleep.");
+        int choice = scanner.nextInt();
+
+        if (choice == 1) {
+            tamagotchiCat.feed();
+            System.out.println("hey his stats has increased!");
+        } else if (choice == 2) {
+            tamagotchiCat.play();
+            System.out.println("hey his stats has increased!");
+        } else {
+            tamagotchiCat.sleep();
+            System.out.println("hey his stats has increased!");
+
+        }
+
+        tamagotchiCat.catNip();
+        System.out.println();
+        System.out.println();
+
+
+        System.out.println("what would you like to do with your friend?");
+
+        System.out.println("1. feed.\n2. play.\n3. sleep.");
+        int choice2 = scanner.nextInt();
+
+        if (choice2 == 1) {
+            tamagotchiCat.feed();
+            System.out.println("hey his stats has increased!");
+        } else if (choice == 2) {
+            tamagotchiCat.play();
+            System.out.println("hey his stats has increased!");
+        } else {
+            tamagotchiCat.sleep();
+            System.out.println("hey his stats has increased!");
+
+        }
+
+
     }
 }

@@ -20,6 +20,7 @@ public class Tamagotchi {
         boolean play = true;
         if (play) {
             int addPlus10 = mood + 10;
+            System.out.println("mood = " + addPlus10);
         }
     }
 
@@ -28,7 +29,8 @@ public class Tamagotchi {
 
         boolean feed = true;
         if (feed) {
-            int addPlus40 = hunger + 40;
+            int addPlus60 =  hunger + 60;
+            System.out.println("hunger = " + addPlus60);
         }
     }
 
@@ -38,6 +40,7 @@ public class Tamagotchi {
         boolean sleep = true;
         if (sleep) {
             int addPlus60 = energy + 60;
+            System.out.println("energy = " + addPlus60);
         }
     }
 

@@ -4,6 +4,7 @@ public class Dog extends Tamagotchi{
 
     public Dog(String name, int age, int mood, int energy, int hunger) {
         super(name, age, mood, energy, hunger);
+
     }
 
 
